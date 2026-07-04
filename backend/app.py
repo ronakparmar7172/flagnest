@@ -1,6 +1,6 @@
 import flask
 import psycopg2
-from config import config
+from .config import config
 from flask import send_file, jsonify
 from PIL import Image
 import io
