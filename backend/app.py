@@ -38,7 +38,7 @@ def home():
         cursor = conn.cursor()
         cursor.execute("SELECT version();")
         db_version = cursor.fetchone()
-        return jsonify({"message": f"Connected to PostgreSQL database. Version: {db_version[0]}"}), 200
+        return jsonify({"message": f"api is running"}), 200
 
     except Exception as error:
         return jsonify({"message": f"Error connecting to database: {error}"}), 500
